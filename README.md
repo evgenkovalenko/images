@@ -5,21 +5,23 @@ Ensure you have the following installed:
 - Docker Desktop for Windows
 - Docker Compose
 
-2.	Running the Solution
 
-Start the environment using:
+2️⃣ 	Running the Solution
+
+Fork and Clone repository to your local dev environment.
+
+Build solution with docker compose.
 
 Open powershell and run next command:
 
- docker compose  -f "{Full-path-to-folder-with code}\docker-compose.yml" -f "{Full-path-to-folder-with code}\docker-compose.override.yml" -p ekovalenkocompose103 --ansi never up -d --build --remove-orphans
+ docker compose  -f "{Full-path-to-folder-with-code}\docker-compose.yml" -f "{Full-path-to-folder-with-code}\docker-compose.override.yml" -p ekovalenkocompose103 --ansi never up -d --build --remove-orphans
  
 After that in Docker Desktop must be created next containers  
 
 ![GitHub Image](https://raw.githubusercontent.com/evgenkovalenko/images/refs/heads/main/dockercompose-1.png)
-
  
   
-3. Testing the Application
+3️⃣  Testing the Application
 Once the containers are up, you can check if your application is running correctly by making a POST request:
 
 ![GitHub Image](https://raw.githubusercontent.com/evgenkovalenko/images/refs/heads/main/AddMatchingSearch-2.png)
@@ -39,7 +41,7 @@ OR CMD
 curl -X GET "http://localhost:25331/match?userId=userid_1" -H "Accept: application/json"
 
 
-4. To check application logs can be used Docker Desktop functionality :
+4️⃣  To check application logs can be used Docker Desktop functionality :
 
 ![GitHub Image](https://raw.githubusercontent.com/evgenkovalenko/images/refs/heads/main/ServicesLogs-4.png)
 
