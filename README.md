@@ -11,7 +11,7 @@ Start the environment using:
 
 Open powershell and run next command:
 
- docker compose  -f "<<Full-path-to-folder-with code>>\docker-compose.yml" -f "<<Full-path-to-folder-with code>>\docker-compose.override.yml" -p ekovalenkocompose103 --ansi never up -d --build --remove-orphans
+ docker compose  -f "{Full-path-to-folder-with code}\docker-compose.yml" -f "{Full-path-to-folder-with code}\docker-compose.override.yml" -p ekovalenkocompose103 --ansi never up -d --build --remove-orphans
  
 After that in Docker Desktop must be created next containers  
 
